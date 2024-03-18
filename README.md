@@ -12,3 +12,6 @@ Created one more folder of Backend in same file.
   - in index.js import that function (const nameofFunction = require("./db))
   - then call this function nameofFuction()
   - now configure express js code for end point setup.
+
+--- now i will create models -> in module i will schema for Users and Notes
+-- Now in routes folder i will create auth(Users authentication) route and notes(Users notes) route
