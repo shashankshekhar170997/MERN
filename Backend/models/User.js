@@ -20,5 +20,7 @@ const UserSchema = new Schema({
     default: Date.now,
   },
 });
-
-module.exports = mongoose.model("user", UserSchema);
+const User = mongoose.model("user", UserSchema);
+// it will help to create unique user
+User.createIndexes();
+module.exports = User;

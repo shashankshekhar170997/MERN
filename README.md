@@ -13,5 +13,11 @@ Created one more folder of Backend in same file.
   - then call this function nameofFuction()
   - now configure express js code for end point setup.
 
---- now i will create models -> in module i will schema for Users and Notes
--- Now in routes folder i will create auth(Users authentication) route and notes(Users notes) route
+--- now i will create models -> in module i will create schema for Users and Notes.
+-- Now in routes folder i will create auth(Users authentication) route and notes(Users notes) route.
+
+--- Created end points for create user by using router.pots method which is express method..
+-- implemented express validator to validate user data.
+
+-- implemented User.createIndexs() for unique user creation (means i can't create user with same email id)
+-- implement custom error message
