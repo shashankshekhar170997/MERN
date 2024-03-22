@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const NoteSchema = new Schema({
+  // For associate user to their notes only. Not other users.
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "user",
+  },
   title: {
     type: String,
     required: true,
@@ -16,7 +21,7 @@ const NoteSchema = new Schema({
   },
   date: {
     type: Date,
-    required: Date.now,
+    default: Date.now,
   },
 });
 
