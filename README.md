@@ -19,5 +19,6 @@ Created one more folder of Backend in same file.
 --- Created end points for create user by using router.pots method which is express method..
 -- implemented express validator to validate user data.
 
--- implemented User.createIndexs() for unique user creation (means i can't create user with same email id)
 -- implement custom error message
+
+-- -- Created api for Createuser, login, and get userdetail
