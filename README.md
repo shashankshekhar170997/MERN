@@ -21,4 +21,7 @@ Created one more folder of Backend in same file.
 
 -- implement custom error message
 
--- -- Created api for Createuser, login, and get userdetail
+-- -- Created api for Createuser, login, and get userdetail $$ delete note.
+
+-- Now we will move to Front end part & install react-router-dom and concurrently.
+--- consurrently package is use for both server to work simultenously.
