@@ -25,3 +25,10 @@ Created one more folder of Backend in same file.
 
 -- Now we will move to Front end part & install react-router-dom and concurrently.
 --- consurrently package is use for both server to work simultenously.
+------------- Front end part---------
+
+-- setup Bootstrap(css)
+-- Context api
+
+-- created components for Notes & NoteItems
+-- implement bootstrap card for notes
