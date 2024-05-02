@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import noteContext from "../Context/Notes/NoteContext";
 import { useContext } from "react";
 const AddNote = () => {
   const context = useContext(noteContext);
   const { addNote } = context;
-  const handleClick= ()=>{
-
-  }
-  const onChange = ()=>{
-    
-  }
+  const [note, setNote] = useState({
+    title: "",
+    description: "",
+    tag: "default",
+  });
+  const handleClick = (e) => {
+    e.preventDefault();
+    addNote(note.title, note.description, note.tag);
+  };
+  const onChange = (e) => {
+    setNote({ ...note, [e.target.name]: e.target.value });
+  };
   return (
     <div>
       <div className="container my-3">
@@ -22,12 +28,11 @@ const AddNote = () => {
             <input
               type="text"
               className="form-control"
-              id="text"
+              id="title"
               aria-describedby="emailHelp"
               name="title"
               onChange={onChange}
             />
-          
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">
@@ -36,10 +41,9 @@ const AddNote = () => {
             <input
               type="text"
               className="form-control"
-              id="desc"
-              name="desc"
+              id="description"
+              name="description"
               onChange={onChange}
-
             />
           </div>
           <div className="mb-3 form-check">
@@ -52,8 +56,12 @@ const AddNote = () => {
               Check me out
             </label>
           </div>
-          <button type="submit" className="btn btn-primary" onClick={handleClick}>
-            Submit
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={handleClick}
+          >
+            Add Note
           </button>
         </form>
       </div>

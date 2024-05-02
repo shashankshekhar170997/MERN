@@ -14,5 +14,4 @@ const NoteItems = ({ note }) => {
     </div>
   );
 };
-
 export default NoteItems;
